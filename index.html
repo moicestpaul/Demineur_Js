@@ -27,26 +27,26 @@
         </div>
         <div class="menu">
             <button id="fichier_button">Fichier</button>
-            <ul>
-                <li>Nouvelle partie</li>
-                <li>Code source (Git)</li>
-                <li>Quitter</li>
+            <ul id="menu_list" style="display:none;">
+                <li><a id="new_game_menu">Nouvelle partie</a></li>
+                <li><a href="https://github.com/moicestpaul/Demineur_Js" target="_blank">Code source (Git)</a></li>
+                <li><a href="http://www.google.fr">Quitter</a></li>
             </ul>
 
         </div>
         <div class="content">
             <div class="content-header">
                 <div class="score-cont">
-                    <p class="score1">999</p>
+                    <p id="score1">999</p>
                 </div>
                 <div>
                     <h4 id="status"></h4>
                 </div>
                 <div class="score-cont">
-                    <p class="score2">999</p>
+                    <p id="score2">000</p>
                 </div>
             </div>
-            <div class="game">
+            <div id="game">
 
             </div>
         </div>
