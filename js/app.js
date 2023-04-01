@@ -23,6 +23,7 @@ export function gameRemove(){
 
 export function selectDifficulty (){
     document.getElementById('game').innerHTML = '';
+    document.getElementById('status').innerText = '';
     document.querySelector(`#game`).insertAdjacentHTML('beforeend',`
         <h4>Choisissez votre difficulté :</h4>
         <button id="button_easy">Facile</button>
