@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+  }
+
 @font-face {
     font-family: 'Digital-7Mono';
     src: url('../fonts/subset-Digital-7Mono.woff2') format('woff2'),
@@ -26,7 +35,6 @@ body {
 }
 
 .window {
-
     background: rgb(22,104,249);
     background: linear-gradient(145deg, rgba(22,104,249,1) 0%, rgba(0,85,234,1) 8%, rgba(0,72,199,1) 100%);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.509);
@@ -129,7 +137,7 @@ body {
 
 .menu button{
     height: 24px;
-    padding: 0 3px;
+    padding: 0 8px;
 
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 
@@ -145,8 +153,7 @@ body {
 }
 
 .content {
-    width: 500px;
-    height: 500px;
+    /* min-height: 500px; */
 
     margin: 0 3px 3px 3px;
     padding: 10px;
@@ -157,6 +164,7 @@ body {
 .content .content-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: auto;
     padding: 10px;
@@ -186,10 +194,73 @@ body {
     opacity: .3;
 }
 
+#status {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+
+    color: rgb(203, 0, 0);
+}
+
 .content .game{
     width: auto;
-    height: 10px;
-
-    background:green;
+    background-color: #a1a1a1;
     border: 3px inset #e0e0e0;
+}
+
+.row{
+    display: flex;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    background:#c0c0c0;
+    border: 3px outset #e0e0e0;
+
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+
+    cursor: pointer;
+}
+
+.tile.clicked{
+    background:#a1a1a1;
+    border: 3px solid #979797;
+}
+
+.tile.bomb{
+    background-color: red;
+    background-image: url('../img/bomb.png');
+    background-size: contain;
+}
+
+.tile.flaged{
+    background-image: url('../img/flag.png');
+    background-size: contain;
+}
+
+.tile.type_0 {
+    color:transparent;
+}
+
+.tile.type_1 {
+    color:blue;
+}
+
+.tile.type_2 {
+    color:green;
+}
+
+.tile.type_3 {
+    color:red;
+}
+
+.tile.type_4 {
+    color:darkmagenta;
 }
