@@ -1,0 +1,19 @@
+{
+  "name": "demineur_js",
+  "version": "1.0.0",
+  "description": "Demineur en JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moicestpaul/demineur_js.git"
+  },
+  "author": "Paul Bouloc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moicestpaul/demineur_js/issues"
+  },
+  "homepage": "https://github.com/moicestpaul/demineur_js#readme"
+}

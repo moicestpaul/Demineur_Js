@@ -1,376 +1,312 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .noselect {
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none; 
-          -ms-user-select: none; 
-              user-select: none; 
-  }
-
-@font-face {
-    font-family: 'Digital-7Mono';
-    src: url('../fonts/subset-Digital-7Mono.woff2') format('woff2'),
-        url('../fonts/subset-Digital-7Mono.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+@font-face {
+  font-family: "Digital-7Mono";
+  src: url("../fonts/subset-Digital-7Mono.woff2") format("woff2"), url("../fonts/subset-Digital-7Mono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-image: url('../img/background.webp');
-    background-position: center bottom;
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/background.webp");
+  background-position: center bottom;
+  background-size: cover;
 }
 
 #desk_icons {
-    position: fixed;
-    top:20px;
-    left:20px;
-    z-index: 2;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
 }
-
 #desk_icons > div {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-#desk_icons > div:hover{
-    background-color: rgba(0, 0, 0, 0.128);
+#desk_icons > div:hover {
+  background-color: rgba(0, 0, 0, 0.128);
 }
-
 #desk_icons .ico {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 }
-
 #desk_icons .ico_demineur {
-    background-image: url('../img/logo.webp');
-    background-size: contain;
+  background-image: url("../img/logo.webp");
+  background-size: contain;
 }
-
 #desk_icons .ico_github {
-    background-image: url('../img/github.png');
-    background-size: contain;
+  background-image: url("../img/github.png");
+  background-size: contain;
 }
-
-#desk_icons span{
-    display: block;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    color: white;
-    text-shadow: 0 2px 1px black;
+#desk_icons span {
+  display: block;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: white;
+  text-shadow: 0 2px 1px black;
 }
 
 #window {
-    background: rgb(22,104,249);
-    background: linear-gradient(145deg, rgba(22,104,249,1) 0%, rgba(0,85,234,1) 8%, rgba(0,72,199,1) 100%);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.509);
-    border: 1px solid black;
-    border-radius: 8px 8px 0 0;
-    z-index: 5;
+  background: rgb(22, 104, 249);
+  background: linear-gradient(145deg, rgb(22, 104, 249) 0%, rgb(0, 85, 234) 8%, rgb(0, 72, 199) 100%);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.509);
+  border: 1px solid black;
+  border-radius: 8px 8px 0 0;
+  z-index: 5;
 }
 
 .title {
-    display: flex;
-    justify-content: space-between;
-    max-height: 30px;
-    padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 30px;
+  padding: 5px;
 }
-
 .title h1 {
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
-    font-weight: 500;
-    text-shadow: 0 1px 0 black;
-    line-height: 30px;
-    margin-left: 5px;
-    color: white;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-shadow: 0 1px 0 black;
+  line-height: 30px;
+  margin-left: 5px;
+  color: white;
 }
-
 .title .buttons {
-    display: flex;
+  display: flex;
 }
-
 .title button {
-    height: 30px;
-    width: 30px;
-    margin-left: 5px;
-
-    border: 1px solid white;
-    border-radius: 3px;
-    background: transparent;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.205) 0%, rgba(255,255,255,0) 67%);
-
-    color: white;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    overflow: hidden;
-
-    cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: transparent;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.205) 0%, rgba(255, 255, 255, 0) 67%);
+  color: white;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  cursor: pointer;
 }
-
 .title button:disabled {
-    opacity: .3;
-    cursor: auto;
+  opacity: 0.3;
+  cursor: auto;
 }
-
 .title button:enabled:hover {
-    background:rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
-
-
-.title #reduce span{
-    font-size: 1.5em;
-    line-height: 10px;
+.title #reduce span {
+  font-size: 1.5em;
+  line-height: 10px;
 }
-
 .title #maximize span {
-    font-size: 2em;
-    line-height: 10px;
+  font-size: 2em;
+  line-height: 10px;
 }
-
 .title #close {
-    font-weight: 500;
-    font-size: 1.2em;
-
-    background: rgb(237,149,127);
-    background: linear-gradient(145deg, rgba(237,149,127,1) 0%, rgba(224,56,2,1) 100%);
+  font-weight: 500;
+  font-size: 1.2em;
+  background: rgb(237, 149, 127);
+  background: linear-gradient(145deg, rgb(237, 149, 127) 0%, rgb(224, 56, 2) 100%);
 }
-
-.title #close:enabled:hover{
-    background: rgb(246, 175, 157);
-    background: linear-gradient(145deg, rgb(249, 172, 153) 0%, rgb(237, 83, 32) 100%);
+.title #close:enabled:hover {
+  background: rgb(246, 175, 157);
+  background: linear-gradient(145deg, rgb(249, 172, 153) 0%, rgb(237, 83, 32) 100%);
 }
 
 .program_name {
-    display: flex;
-    
+  display: flex;
 }
-
 .program_name img {
-    height: 22px;
-    margin-top: 4px;
+  height: 22px;
+  margin-top: 4px;
 }
 
 .menu {
-    width: calc(100% - 6px);
-    height: 24px;
-    margin: 0 3px;
-    padding: 0;
-
-    overflow: hidden;
-
-    background-color: #ece9d8;
+  width: calc(100% - 6px);
+  height: 24px;
+  margin: 0 3px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ece9d8;
 }
-
-.menu button{
-    height: 24px;
-    padding: 0 8px;
-
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-size: .9em;
-
-    border: none;
-    background: transparent;
-
-    cursor: pointer;
+.menu button {
+  height: 24px;
+  padding: 0 8px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
-
-
-.menu button:hover{
-    background: rgba(0,0,0,.1);
+.menu button:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
-
 .menu ul {
-    flex-direction: column;
-    position: absolute;
-    z-index: 10;
-
-    list-style-type: none;
-
-    border: 1px solid rgba(0, 0, 0, 0.584);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.347);
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  list-style-type: none;
+  border: 1px solid rgba(0, 0, 0, 0.584);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.347);
 }
-
 .menu a {
-    display: block;
-    width: 180px;
-    padding: 2px 8px;
-    background-color: #ece9d8;
-
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-size: .9em;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+  display: block;
+  width: 180px;
+  padding: 2px 8px;
+  background-color: #ece9d8;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
-
-.menu a:hover{
-    background-color: #d7d4c4;
+.menu a:hover {
+  background-color: #d7d4c4;
 }
 
 .content {
-    min-height: calc(10 * 36px);
-    min-width: calc(10 * 36px);
-
-    margin: 0 3px 3px 3px;
-    padding: 10px;
-
-    background-color: #c0c0c0;
+  min-height: 360px;
+  min-width: 360px;
+  margin: 0 3px 3px 3px;
+  padding: 10px;
+  background-color: #c0c0c0;
 }
-
-.content .content-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: auto;
-    padding: 10px;
-    margin-bottom: 10px;
-
-    border: 3px inset #e0e0e0;
+.content .content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px inset #e0e0e0;
 }
 
 .score-cont {
-    font-family: 'Digital-7Mono';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 3em;
-
-    color:red;
-    border: 3px inset #e0e0e0;
-
-    background-color: black;
-
-    padding: 4px;
+  font-family: "Digital-7Mono";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em;
+  color: red;
+  border: 3px inset #e0e0e0;
+  background-color: black;
+  padding: 4px;
 }
-
-.score-cont:before{
-    content: '888';
-    position: absolute;
-    color: red;
-    opacity: .3;
+.score-cont:before {
+  content: "888";
+  position: absolute;
+  color: red;
+  opacity: 0.3;
 }
 
 #status {
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    font-size: 1.5em;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+#status.gameover {
+  color: rgb(203, 0, 0);
+}
+#status.victory {
+  color: rgb(0, 143, 12);
 }
 
-#status.gameover{
-    color: rgb(203, 0, 0);
-}
-
-#status.victory{
-    color: rgb(0, 143, 12);
-}
-
-.content .game{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    background-color: #a1a1a1;
-    border: 3px inset #e0e0e0;
+.content .game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-color: #a1a1a1;
+  border: 3px inset #e0e0e0;
 }
 
 h4 {
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 10px auto;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 10px auto;
 }
+
 #button_easy, #button_normal, #button_hard {
-    display: block;
-    width: 100px;
-    margin: 5px auto;
-    padding: 5px 0;
-
-    background:#c0c0c0;
-    border: 3px outset #e0e0e0;
-
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-
-    cursor: pointer;
+  display: block;
+  width: 100px;
+  margin: 5px auto;
+  padding: 5px 0;
+  background: #c0c0c0;
+  border: 3px outset #e0e0e0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
 }
 
 #button_easy:hover, #button_normal:hover, #button_hard:hover {
-    background-color: #a0a0a0;
-    border: 3px inset #e0e0e0;
+  background-color: #a0a0a0;
+  border: 3px inset #e0e0e0;
 }
 
-.row{
-    display: flex;
+.row {
+  display: flex;
 }
 
 .tile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-
-    background:#c0c0c0;
-    border: 3px outset #e0e0e0;
-
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #c0c0c0;
+  border: 3px outset #e0e0e0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
 }
-
-.tile.clicked{
-    background:#a1a1a1;
-    border: 3px solid #979797;
+.tile.clicked {
+  background: #a1a1a1;
+  border: 3px solid #979797;
 }
-
-.tile.bomb{
-    background-color: red;
-    background-image: url('../img/bomb.png');
-    background-size: contain;
+.tile.bomb {
+  background-color: red;
+  background-image: url("../img/bomb.png");
+  background-size: contain;
 }
-
-.tile.bomb.defused{
-    background-color: green !important;
+.tile.bomb.defused {
+  background-color: green !important;
 }
-
-.tile.flaged{
-    background-image: url('../img/flag.png');
-    background-size: contain;
+.tile.flaged {
+  background-image: url("../img/flag.png");
+  background-size: contain;
 }
-
 .tile.type_0 {
-    color:transparent;
+  color: transparent;
 }
-
 .tile.type_1 {
-    color:blue;
+  color: blue;
 }
-
 .tile.type_2 {
-    color:green;
+  color: green;
 }
-
 .tile.type_3 {
-    color:red;
+  color: red;
 }
-
 .tile.type_4 {
-    color:darkmagenta;
+  color: darkmagenta;
 }
 
+/*# sourceMappingURL=style.css.map */
