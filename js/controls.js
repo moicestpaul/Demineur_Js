@@ -20,7 +20,7 @@ export function initControls(map){
                     isAdjacentNull(map, y, x);
                 }else{
                     e.currentTarget.innerHTML=map[y][x];
-                    e.currentTarget.classList.add('clicked'); // #########################
+                    e.currentTarget.classList.add('clicked');
                 } 
             }
         });    

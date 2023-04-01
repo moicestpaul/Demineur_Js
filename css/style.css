@@ -34,12 +34,54 @@ body {
     background-size: cover;
 }
 
-.window {
+#desk_icons {
+    position: fixed;
+    top:20px;
+    left:20px;
+    z-index: 2;
+}
+
+#desk_icons > div {
+    cursor: pointer;
+}
+
+#desk_icons > div:hover{
+    background-color: rgba(0, 0, 0, 0.128);
+}
+
+#desk_icons .ico {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#desk_icons .ico_demineur {
+    background-image: url('../img/logo.webp');
+    background-size: contain;
+}
+
+#desk_icons .ico_github {
+    background-image: url('../img/github.png');
+    background-size: contain;
+}
+
+#desk_icons span{
+    display: block;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: white;
+    text-shadow: 0 2px 1px black;
+}
+
+#window {
     background: rgb(22,104,249);
     background: linear-gradient(145deg, rgba(22,104,249,1) 0%, rgba(0,85,234,1) 8%, rgba(0,72,199,1) 100%);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.509);
     border: 1px solid black;
     border-radius: 8px 8px 0 0;
+    z-index: 5;
 }
 
 .title {
@@ -91,17 +133,17 @@ body {
 }
 
 
-.title .reduce span{
+.title #reduce span{
     font-size: 1.5em;
     line-height: 10px;
 }
 
-.title .maximize span {
+.title #maximize span {
     font-size: 2em;
     line-height: 10px;
 }
 
-.title .close {
+.title #close {
     font-weight: 500;
     font-size: 1.2em;
 
@@ -109,7 +151,7 @@ body {
     background: linear-gradient(145deg, rgba(237,149,127,1) 0%, rgba(224,56,2,1) 100%);
 }
 
-.title .close:enabled:hover{
+.title #close:enabled:hover{
     background: rgb(246, 175, 157);
     background: linear-gradient(145deg, rgb(249, 172, 153) 0%, rgb(237, 83, 32) 100%);
 }
@@ -247,6 +289,30 @@ body {
     border: 3px inset #e0e0e0;
 }
 
+h4 {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+#button_easy, #button_normal, #button_hard {
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    padding: 5px 0;
+
+    background:#c0c0c0;
+    border: 3px outset #e0e0e0;
+
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+    cursor: pointer;
+}
+
+#button_easy:hover, #button_normal:hover, #button_hard:hover {
+    background-color: #a0a0a0;
+    border: 3px inset #e0e0e0;
+}
+
 .row{
     display: flex;
 }
@@ -307,3 +373,4 @@ body {
 .tile.type_4 {
     color:darkmagenta;
 }
+

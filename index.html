@@ -11,18 +11,26 @@
     <link rel="preload" href="fonts/subset-Digital-7Mono.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-    <script type="module" src="./js/app.js"></script>
-
-    <div class="window noselect">
+    <nav id="desk_icons">
+        <div id="demineur_button">
+            <div class="ico ico_demineur"></div>
+            <span>Demineur.exe</span>
+        </div>
+        <div id="github_button">
+            <div class="ico ico_github"></div>
+            <span>Github</span>
+        </div>
+    </nav>
+    <div id ="window" class="noselect" style="display: block;">
         <div class="title">
             <div class="program_name">
                 <img src="./img/logo.webp" alt="">
                 <h1>Démineur</h1>
             </div>
             <div class="buttons">
-                <button class="reduce" disabled><span>_</span></button>
-                <button class="maximize"><span>□</span></button>
-                <button class="close" onclick="window.location.href='https://www.google.com';"><span>X</span></button>
+                <button id="reduce" disabled><span>_</span></button>
+                <button id="maximize"><span>□</span></button>
+                <button id="close"><span>X</span></button>
             </div>
         </div>
         <div class="menu">
@@ -30,14 +38,14 @@
             <ul id="menu_list" style="display:none;">
                 <li><a id="new_game_menu">Nouvelle partie</a></li>
                 <li><a href="https://github.com/moicestpaul/Demineur_Js" target="_blank">Code source (Git)</a></li>
-                <li><a href="http://www.google.fr">Quitter</a></li>
+                <li><a id="menu_close_link">Quitter</a></li>
             </ul>
 
         </div>
         <div class="content">
             <div class="content-header">
                 <div class="score-cont">
-                    <p id="score1">999</p>
+                    <p id="score1">000</p>
                 </div>
                 <div>
                     <h4 id="status"></h4>
@@ -47,9 +55,10 @@
                 </div>
             </div>
             <div id="game">
-
+                
             </div>
         </div>
     </div>
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 import {mapInit, placeBomb, placeNumbers} from './map.js';
 import {initControls} from './controls.js';
-import { gameRemove, gameStart } from './app.js';
+import { gameRemove, gameStart, selectDifficulty } from './app.js';
 
 
 
@@ -269,7 +269,7 @@ export function windowInit(){
 
         // On lance une nouvelle partie
         gameRemove();
-        gameStart('easy');
+        selectDifficulty();
         
     })
 }
